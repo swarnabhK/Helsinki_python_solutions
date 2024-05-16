@@ -11,3 +11,4 @@ my_list = ["first", "second", "fourth", "eleventh"]
 
 str, length = length_of_longest(my_list)
 print(f"Longest string is: {str} and the length is: {length}")
+  

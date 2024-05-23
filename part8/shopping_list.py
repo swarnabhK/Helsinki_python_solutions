@@ -15,14 +15,19 @@ class ShoppingList:
 
     def amount(self, n: int):
         return self.products[n - 1][1]
-    
-    
-def total_units(my_list):
-    unit = 0
-    for i in range(1,my_list.number_of_items()+1):
-        unit+=my_list.amount(i)
-    return unit
-    
+
+# -------------------------
+# Write your solution here:
+# -------------------------
+
+def total_units(sl):
+    tot = 0
+    for i in range(1,sl.number_of_items()+1):
+        tot+=sl.amount(i)
+    return tot
+
+
+
 if __name__ == "__main__":
     my_list = ShoppingList()
     my_list.add("bananas", 10)
